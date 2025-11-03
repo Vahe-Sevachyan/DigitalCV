@@ -1,8 +1,8 @@
-export const PersonalInfo = ({ onChange }) => {
+export const PersonalInfo = ({ FirstNameChange, LastNameChange }) => {
   return (
     <div>
-      <input type="text" placeholder="First Name" onChange={onChange} />
-      <input type="text" placeholder="Last Name" onChange={onChange} />
+      <input type="text" placeholder="First Name" onChange={FirstNameChange} />
+      <input type="text" placeholder="Last Name" onChange={LastNameChange} />
     </div>
   );
 };
