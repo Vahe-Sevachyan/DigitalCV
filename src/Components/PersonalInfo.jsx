@@ -1,3 +1,4 @@
+import "./PersonalInfo.css";
 export const PersonalInfo = ({
   FirstNameChange,
   LastNameChange,
@@ -5,7 +6,7 @@ export const PersonalInfo = ({
   PhoneNumberChange,
 }) => {
   return (
-    <div>
+    <div className="PersonalDetailsContainer">
       <input type="text" placeholder="First Name" onChange={FirstNameChange} />
       <input type="text" placeholder="Last Name" onChange={LastNameChange} />
       <input type="email" placeholder="Email" onChange={EmailChange} />

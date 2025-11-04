@@ -1,0 +1,4 @@
+.PersonalDetailsContainer {
+  display: flex;
+  flex-direction: column;
+}
