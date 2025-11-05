@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./App.css";
 import { PersonalInfo } from "./Components/PersonalInfo";
-
+import Summary from "./Components/Summary";
 function App() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -46,6 +46,10 @@ function App() {
             <h2>Phone Number:{phoneNumber}</h2>
             <h2>Location: {location}</h2>
           </div>
+          <div className="summarySection">
+            <Summary />
+          </div>
+          <div className="techSkillsSection"></div>
         </section>
       </div>
     </>
