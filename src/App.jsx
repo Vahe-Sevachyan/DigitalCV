@@ -21,22 +21,25 @@ function App() {
   function HandlePhoneNumberChange(event) {
     setPhoneNumber(event.target.value);
   }
+
   return (
     <div className="mainDisplay">
-      <div className="inputSection">
+      <section className="inputSection">
         <PersonalInfo
           FirstNameChange={handleFirstNameChange}
           LastNameChange={handleLastNameChange}
           EmailChange={handleEmailChange}
           PhoneNumberChange={HandlePhoneNumberChange}
         />
-      </div>
-      <div className="displaySection">
-        <h2>First Name: {firstName}</h2>
-        <h2>Last Name: {lastName}</h2>
-        <h2>Email: {email}</h2>
-        <h2>Phone Number:{phoneNumber}</h2>
-      </div>
+      </section>
+      <section className="displaySection">
+        <div className="personalInfoInputs">
+          <h2>First Name: {firstName}</h2>
+          <h2>Last Name: {lastName}</h2>
+          <h2>Email: {email}</h2>
+          <h2>Phone Number:{phoneNumber}</h2>
+        </div>
+      </section>
     </div>
   );
 }

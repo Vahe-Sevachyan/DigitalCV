@@ -1,4 +1,13 @@
 .inputSection {
   border: 1px solid red;
-  width: 700px;
+  min-width: 50%;
+}
+.mainDisplay {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.displaySection {
+  border: 1px solid black;
+  min-width: 50%;
 }
