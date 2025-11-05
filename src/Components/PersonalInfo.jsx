@@ -4,9 +4,11 @@ export const PersonalInfo = ({
   LastNameChange,
   EmailChange,
   PhoneNumberChange,
+  LocationChange,
 }) => {
   return (
     <div className="PersonalDetailsContainer">
+      <h3>Personal Details</h3>
       <label htmlFor="firstName">First Name: </label>
       <input
         type="text"
@@ -34,6 +36,13 @@ export const PersonalInfo = ({
         name="phone"
         placeholder="Phone"
         onChange={PhoneNumberChange}
+      />
+      <label htmlFor="location">Location</label>
+      <input
+        type="text"
+        name="location"
+        placeholder="Location"
+        onChange={LocationChange}
       />
     </div>
   );

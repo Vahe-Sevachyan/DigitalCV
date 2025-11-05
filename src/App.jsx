@@ -8,7 +8,7 @@ function App() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-
+  const [location, setLocation] = useState("");
   const handleFirstNameChange = (event) => {
     setFirstName(event.target.value);
   };
@@ -21,6 +21,9 @@ function App() {
   function HandlePhoneNumberChange(event) {
     setPhoneNumber(event.target.value);
   }
+  function HandleLocationChange(event) {
+    setLocation(event.target.value);
+  }
 
   return (
     <>
@@ -32,6 +35,7 @@ function App() {
             LastNameChange={handleLastNameChange}
             EmailChange={handleEmailChange}
             PhoneNumberChange={HandlePhoneNumberChange}
+            LocationChange={HandleLocationChange}
           />
         </section>
         <section className="displaySection">
@@ -40,6 +44,7 @@ function App() {
             <h2>Last Name: {lastName}</h2>
             <h2>Email: {email}</h2>
             <h2>Phone Number:{phoneNumber}</h2>
+            <h2>Location: {location}</h2>
           </div>
         </section>
       </div>
