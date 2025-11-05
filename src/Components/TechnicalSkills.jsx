@@ -2,7 +2,7 @@ const TechnicalSkills = () => {
   return (
     <div>
       <h3>TechnicalSkills</h3>
-      <ul>
+      <ul className="techSkillsList">
         <li>
           <input type="text" />
         </li>

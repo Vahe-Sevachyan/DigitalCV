@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import { PersonalInfo } from "./Components/PersonalInfo";
 import Summary from "./Components/Summary";
+import TechnicalSkills from "./Components/TechnicalSkills";
 function App() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -27,7 +28,7 @@ function App() {
 
   return (
     <>
-      <h1 className="appName">Digital Display</h1>
+      <h1 className="appName">Digital CV</h1>
       <div className="mainDisplay">
         <section className="inputSection">
           <PersonalInfo
@@ -40,16 +41,23 @@ function App() {
         </section>
         <section className="displaySection">
           <div className="personalInfoInputs">
-            <h2>First Name: {firstName}</h2>
-            <h2>Last Name: {lastName}</h2>
-            <h2>Email: {email}</h2>
-            <h2>Phone Number:{phoneNumber}</h2>
-            <h2>Location: {location}</h2>
+            <div className="name-container">
+              <h2> {firstName} </h2>
+              <h2> {lastName}</h2>
+            </div>
+
+            <h2 className="email">{email}</h2>
+            <div className="phone-location">
+              <h2>{phoneNumber}</h2>
+              <h2>{location}</h2>
+            </div>
           </div>
           <div className="summarySection">
             <Summary />
           </div>
-          <div className="techSkillsSection"></div>
+          <div className="techSkillsSection">
+            <TechnicalSkills />
+          </div>
         </section>
       </div>
     </>

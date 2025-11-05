@@ -1,11 +1,11 @@
 .inputSection {
-  border: 1px solid red;
-  min-width: 50%;
+  min-width: 15%;
 }
 .mainDisplay {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 .displaySection {
   border: 1px solid black;
@@ -15,4 +15,31 @@
   width: 300px;
   margin: auto;
   padding: 10px 0 10px 0;
+}
+.name-container {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: space-between;
+}
+.personalInfoInputs {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+}
+.email {
+  width: 50%;
+  margin: auto;
+  border: 1px solid black;
+  justify-content: center;
+  display: flex;
+}
+.phone-location {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: space-between;
 }
