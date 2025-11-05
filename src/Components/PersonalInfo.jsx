@@ -7,10 +7,34 @@ export const PersonalInfo = ({
 }) => {
   return (
     <div className="PersonalDetailsContainer">
-      <input type="text" placeholder="First Name" onChange={FirstNameChange} />
-      <input type="text" placeholder="Last Name" onChange={LastNameChange} />
-      <input type="email" placeholder="Email" onChange={EmailChange} />
-      <input type="number" placeholder="Phone" onChange={PhoneNumberChange} />
+      <label htmlFor="firstName">First Name: </label>
+      <input
+        type="text"
+        name="firstName"
+        placeholder="First Name"
+        onChange={FirstNameChange}
+      />
+      <label htmlFor="lastName">Last Name:</label>
+      <input
+        type="text"
+        name="lastName"
+        placeholder="Last Name"
+        onChange={LastNameChange}
+      />
+      <label htmlFor="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        onChange={EmailChange}
+      />
+      <label htmlFor="phone">Phone Number</label>
+      <input
+        type="number"
+        name="phone"
+        placeholder="Phone"
+        onChange={PhoneNumberChange}
+      />
     </div>
   );
 };
