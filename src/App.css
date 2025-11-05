@@ -11,3 +11,8 @@
   border: 1px solid black;
   min-width: 50%;
 }
+.appName {
+  width: 300px;
+  margin: auto;
+  padding: 10px 0 10px 0;
+}

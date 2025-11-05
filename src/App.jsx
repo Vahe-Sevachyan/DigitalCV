@@ -23,24 +23,27 @@ function App() {
   }
 
   return (
-    <div className="mainDisplay">
-      <section className="inputSection">
-        <PersonalInfo
-          FirstNameChange={handleFirstNameChange}
-          LastNameChange={handleLastNameChange}
-          EmailChange={handleEmailChange}
-          PhoneNumberChange={HandlePhoneNumberChange}
-        />
-      </section>
-      <section className="displaySection">
-        <div className="personalInfoInputs">
-          <h2>First Name: {firstName}</h2>
-          <h2>Last Name: {lastName}</h2>
-          <h2>Email: {email}</h2>
-          <h2>Phone Number:{phoneNumber}</h2>
-        </div>
-      </section>
-    </div>
+    <>
+      <h1 className="appName">Digital Display</h1>
+      <div className="mainDisplay">
+        <section className="inputSection">
+          <PersonalInfo
+            FirstNameChange={handleFirstNameChange}
+            LastNameChange={handleLastNameChange}
+            EmailChange={handleEmailChange}
+            PhoneNumberChange={HandlePhoneNumberChange}
+          />
+        </section>
+        <section className="displaySection">
+          <div className="personalInfoInputs">
+            <h2>First Name: {firstName}</h2>
+            <h2>Last Name: {lastName}</h2>
+            <h2>Email: {email}</h2>
+            <h2>Phone Number:{phoneNumber}</h2>
+          </div>
+        </section>
+      </div>
+    </>
   );
 }
 
