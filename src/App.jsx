@@ -45,7 +45,6 @@ function App() {
               <h2> {firstName} </h2>
               <h2> {lastName}</h2>
             </div>
-
             <h2 className="email">{email}</h2>
             <div className="phone-location">
               <h2>{phoneNumber}</h2>

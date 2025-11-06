@@ -1,0 +1,14 @@
+.summary-container {
+  background-color: aliceblue;
+}
+textarea {
+  min-width: 100%;
+  border: none;
+  margin: auto;
+}
+.summary-header {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(241, 240, 238);
+}

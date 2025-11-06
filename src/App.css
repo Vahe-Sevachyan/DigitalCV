@@ -8,7 +8,7 @@
   margin: auto;
 }
 .displaySection {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   min-width: 50%;
 }
 .appName {
@@ -28,12 +28,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid black;
+  background-color: #0e374e;
+  min-height: 150px;
+  color: white;
 }
 .email {
   width: 50%;
   margin: auto;
-  border: 1px solid black;
   justify-content: center;
   display: flex;
 }
@@ -42,4 +43,6 @@
   width: 50%;
   margin: auto;
   justify-content: space-between;
+}
+.summarySection {
 }
