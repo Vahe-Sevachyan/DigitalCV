@@ -44,5 +44,7 @@
   margin: auto;
   justify-content: space-between;
 }
-.summarySection {
+.tech-skills-section {
+  display: flex;
+  flex-direction: column;
 }

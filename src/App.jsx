@@ -10,6 +10,9 @@ function App() {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [location, setLocation] = useState("");
+  const [techSkillsOne, SetTechSkillsOne] = useState("");
+  const [techSkillsTwo, SetTechSkillsTwo] = useState("");
+  const [techSkillsThree, SetTechSkillsThree] = useState("");
   const handleFirstNameChange = (event) => {
     setFirstName(event.target.value);
   };
@@ -25,7 +28,15 @@ function App() {
   function HandleLocationChange(event) {
     setLocation(event.target.value);
   }
-
+  function handleTechSkillsOne(event) {
+    SetTechSkillsOne(event.target.value);
+  }
+  function handleTechSkillsTwo(event) {
+    SetTechSkillsTwo(event.target.value);
+  }
+  function handleTechSkillsThree(event) {
+    SetTechSkillsThree(event.target.value);
+  }
   return (
     <>
       <h1 className="appName">Digital CV</h1>
@@ -37,6 +48,11 @@ function App() {
             EmailChange={handleEmailChange}
             PhoneNumberChange={HandlePhoneNumberChange}
             LocationChange={HandleLocationChange}
+          />
+          <TechnicalSkills
+            TechSkillsOne={handleTechSkillsOne}
+            TechSkillsTwo={handleTechSkillsTwo}
+            TechSkillsThree={handleTechSkillsThree}
           />
         </section>
         <section className="displaySection">
@@ -54,8 +70,10 @@ function App() {
           <div className="summarySection">
             <Summary />
           </div>
-          <div className="techSkillsSection">
-            <TechnicalSkills />
+          <div className="tech-skills-section">
+            <span>{techSkillsOne}</span>
+            <span>{techSkillsTwo}</span>
+            <span> {techSkillsThree}</span>
           </div>
         </section>
       </div>

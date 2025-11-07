@@ -1,18 +1,27 @@
-const TechnicalSkills = () => {
+import "./TechnicalSkills.css";
+const TechnicalSkills = (props) => {
   return (
     <div>
       <h3>TechnicalSkills</h3>
-      <ul className="techSkillsList">
-        <li>
-          <input type="text" />
-        </li>
-        <li>
-          <input type="text" />
-        </li>
-        <li>
-          <input type="text" />
-        </li>
-      </ul>
+      <div className="tech-skills">
+        <input
+          type="text"
+          placeholder="Technical Skills"
+          onChange={props.TechSkillsOne}
+        />
+
+        <input
+          type="text"
+          placeholder="Technical Skills"
+          onChange={props.TechSkillsTwo}
+        />
+
+        <input
+          type="text"
+          placeholder="Technical Skills"
+          onChange={props.TechSkillsThree}
+        />
+      </div>
     </div>
   );
 };
